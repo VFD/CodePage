@@ -31,7 +31,7 @@ Work in progress.
 
 ### Sub routine ?
 
-With Command in windows you can call a sub routine in your code.
+With Command in windows you can call a subroutine in your code.
 
 This is very simple, you have juste to use the command CALL.
 
@@ -62,11 +62,36 @@ So far so good we can tranform our test in subroutine.
 
 SubCodePage.cmd
 
+Call the subroutine.
+
 ``` cmd
-
-ECHO.
-
+CALL :saveActualCodePage
 ``` 
+
+The subroutine for code page.
+
+``` cmd
+:: ----------------------------------------------------------------------
+:: Subroutine for backup initial CHCP
+:: ----------------------------------------------------------------------
+:saveActualCodePage
+FOR /F "tokens=1-6 delims= " %%A IN ('chcp') DO (
+	SET codePageSaved=%%E
+	CHCP 65001 > NUL
+)
+EXIT /B
+``` 
+
+At the end of the script, restore the code page wich was saved.
+
+``` cmd
+:: ----------------------------------------------------------------------
+:: END
+:: ----------------------------------------------------------------------
+:END
+CHCP %codePageSaved% > NUL
+SET codePageSaved=
+```
 
 have a nice dev.
 <hr>
