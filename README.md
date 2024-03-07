@@ -37,7 +37,7 @@ This is very simple, you have juste to use the command CALL.
 
 Example:
 
-```
+``` cmd
 @ECHO OFF
 :: ----------------------------------------------------------------------
 CALL :HelloWorld
@@ -55,5 +55,7 @@ EXIT /B
 :: ----------------------------------------------------------------------
 :END
 ```
+
+The "EXIT /B" just exit from the sub routine, not the script.
 
 <hr>
