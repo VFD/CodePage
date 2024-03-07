@@ -18,16 +18,11 @@ Like French Accent or for example box drawing :
 ```
 
 This can be an issue if your not in UTF-8.
-
 At the begining, the script save the current Code Page.
-
 At the end, the initial code page is restored.
+Use this as you wish.
 
-use this as you wish.
-
-## With a sub routine : 
-
-Work in progress.
+## With a subroutine 
 
 ### Sub routine ?
 
