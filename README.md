@@ -58,4 +58,10 @@ EXIT /B
 
 The "EXIT /B" just exit from the sub routine, not the script.
 
+So far so good we can tranform our test
+
+
+
+
+
 <hr>
