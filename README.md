@@ -58,10 +58,15 @@ EXIT /B
 
 The "EXIT /B" just exit from the sub routine, not the script.
 
-So far so good we can tranform our test
+So far so good we can tranform our test in subroutine.
 
+SubCodePage.cmd
 
+``` cmd
 
+ECHO.
 
+``` 
 
+have a nice dev.
 <hr>
