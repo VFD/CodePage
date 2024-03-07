@@ -29,4 +29,31 @@ use this as you wish.
 
 Work in progress.
 
+### Sub routine ?
+
+With Command in windows you can call a sub routine in your code.
+
+This is very simple, you have juste to use the command CALL.
+
+Example:
+
+```
+@ECHO OFF
+:: ----------------------------------------------------------------------
+CALL :HelloWorld
+:: ----------------------------------------------------------------------
+GOTO:END
+:: ----------------------------------------------------------------------
+:: Sub routine for backup initial CHCP
+:: ----------------------------------------------------------------------
+:HelloWorld
+ECHO.
+ECHO Hello World!
+EXIT /B
+:: ----------------------------------------------------------------------
+:: END
+:: ----------------------------------------------------------------------
+:END
+```
+
 <hr>
