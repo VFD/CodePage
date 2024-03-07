@@ -6,7 +6,7 @@ Windows Command is not necessary with UTF-8 CP, so many problems with special ch
 
 # How to
 
-## Test-CopePage.cmd
+## Test-CodePage.cmd
 
 This script can be use when you need to use UTF-8 char.
 Like French Accent or for example box drawing : 
